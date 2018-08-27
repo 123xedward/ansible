@@ -1,6 +1,9 @@
----
-  - name: Provisioning of java
-    yum: java-1.7.0-openjdk state=present
+- name: Provisioning of java
+  yum:
+    name: java-1.7.0-openjdk
+    state: present
 
-  - name: Provisioning of mysql
-    yum: mariadb.x86_64 state=presentdf
+- name: Provisioning of mysql
+  yum:
+    name: mariadb.x86_64
+    state: present
